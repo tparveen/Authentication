@@ -1,0 +1,30 @@
+# This program will be built progressively, introducing authentication and developing authentication best-practices.
+
+* Create a basic node application no authentication. You should have two pages: an index route
+  and a second page. Anyone may freely browse both pages for this program although one of them is a page is tagged to be a  
+  page that requires authentication. We will take this second page and add authentication to it. Call this
+  no-authorization.js. Be sure to change your package.Json and point to this file as your main entry point.
+  
+* Take the no-authorization application and add user authorization to this. We are not going to use Mongo for this one. Just    
+  store the user information as objects in the program. In this case, the first page will be public, but the second page    
+  needs HTTP Basic Auth. Name this basicAuthorization.js. Be sure to change your package.Json and point to this file as your     
+  main entry point. 
+  
+* In the above basicAuthorization program, this time encrypt the password and then authenticate. Show the encrypted password      
+  so you know that it has been encrypted properly. Name this encryptedPwd.js
+
+* Instead of HTTP Basic Auth, credentials are requested using a GET/POST pair of routes. The secret page sends back a    
+  challenge, then processes the response. Have users fill out a username and password input boxes and submit the form to be       
+  processed.
+  
+* In addition to the user name and password, the user must answer a randomly selected question. Note that any failure gives 
+  back a 403; you are not told whether your user name was wrong, your password didn't match, or you got the
+  textcha wrong. Name this textCha.js
+
+Extra credit work for the afternoon
+
+* Add 2 test cases to see if your authentication is working properly. Test cases could be making sure that the password is encrypted, 
+  valid user is present etc.
+
+* Once you know how to authenticate users using different methods, change your authentication to use a database. 
+  Modify one of your program such that user credentials are stored in a database (eg Mongo/Mongoose, PostgreSQL, etc).
