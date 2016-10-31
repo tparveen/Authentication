@@ -1,6 +1,6 @@
 # This program will be built progressively, introducing authentication and developing authentication best-practices.
 
-* Create a basic node application no authentication. You should have two pages: an index route
+* Create a basic node application with no authentication on the page. You should have two pages: an index route
   and a second page. Anyone may freely browse both pages for this program although one of them is a page is tagged to be a  
   page that requires authentication. We will take this second page and add authentication to it. Call this
   no-authorization.js. 
