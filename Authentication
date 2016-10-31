@@ -1,9 +1,8 @@
 # This program will be built progressively, introducing authentication and developing authentication best-practices.
 
 * Create a basic node application with no authentication on the page. You should have two endpoints in this page: an index route
-  and a second route that we will use for user authentication later on. Anyone may freely browse both pages for this program although one of them is a page is tagged to be a  
-  page that requires authentication. We will take this second page and add authentication to it. Call this
-  no-authorization.js. 
+  and a second route that we will use for user authentication later on. Anyone may freely browse both pages for this program. 
+  We will take this second page and add authentication to it. Call this program no-authorization.js. 
   
 * Take the no-authorization application and add user authorization to this. We are not going to use Mongo for this one. Just    
   store the user information as objects in the program. In this case, the first page will be public, but the second page    
